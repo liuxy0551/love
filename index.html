@@ -17,15 +17,15 @@
     </head>
     <body>
         <div id="main">
-            <div id="error">亲，您使用的浏览器无法支持即将显示的内容，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器哟~</div>
+            <div id="error">大男孩 And 小可爱 —— </div>
             <div id="wrap">
                <div id="text">
                   <div id="code">
-                    <span class="say">我的开心果，在我贮藏情感的时候，你敞开心扉陪着我，</span><br>
-                    <span class="say">我不想矫情，也不想幼稚，</span><br>
-                    <span class="say">我在憧憬着未来。</span><br>
+                    <span class="say">我的小可爱，在我贮藏情感的时候，</span><br>
+                    <span class="say">谢谢你敞开心扉陪着我。</span><br>
                     <span class="say">我停下脚步，</span><br>
-                    <span class="say">回忆我们曾走过的路。</span><br>
+                    <span class="say">回忆我们曾走过的路，</span><br>
+                    <span class="say">憧憬着我们的未来。</span><br>
                     <br>
                     <span class="say">我想与你道声晚安再入梦乡，</span><br>
                     <span class="say">我想和你去我们想去的远方，</span><br>
@@ -38,19 +38,19 @@
                     <span class="say">还期待着我们的幸福快乐！</span><br>
                     <br>
                     <span class="say">所有的点点滴滴，</span><br>
-                    <span class="say">都将是我们美好的回忆。</span><br>
-                    <span class="say">未来请让我牵着你的手一起走</span><br>
-                    <span class="say">开心果, my love!</span><br>
-                    <span class="say"><span class="space"></span> -- Yours</span><br>
+                    <span class="say">都将是我们美好的回忆，</span><br>
+                    <span class="say">未来请让我牵着你的手一起走。</span><br>
+                    <span class="say">小可爱, my love!</span><br>
+                    <span class="say"><span class="space"></span> -- Yours</span>
                   </div>
                 </div>
                 <div id="clock-box">
-                    <a href="https://liuxy0551.github.io/2014/11/Thinking/" target="_blank">刘易</a> 与 <a href="" target="_blank">开心果</a> 的
+                    <a href="https://liuxy0551.github.io/2014/11/Thinking/" target="_blank">大男孩</a> 与 <a href="" target="_blank">小可爱</a> 的
                     <div id="clock"></div>
                 </div>
                 <canvas id="canvas" width="1200" height="680"></canvas>
             </div>
-            <audio src="./Love_files/love.mp3" autoplay="autoplay"></audio>
+          <audio src="http://media.liuxianyu.cn/love.mp3" id="mp3Audio" autoplay="autoplay"></audio>
         </div>
 
     <script>
@@ -110,6 +110,8 @@
         var hold = 1;
 
         canvas.click(function(e) {
+          $('#mp3Audio')[0].play() // 点击 click 播放音乐
+
             var offset = canvas.offset(), x, y;
             x = e.pageX - offset.left;
             y = e.pageY - offset.top;

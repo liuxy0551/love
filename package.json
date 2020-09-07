@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "deploy": "scp -r * root@47.99.64.142:/mnt/projects/Love"
+  }
+}
